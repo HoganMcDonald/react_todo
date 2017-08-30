@@ -1,0 +1,28 @@
+{
+  "name": "react_todo",
+  "version": "1.0.0",
+  "description": "A react based to do list application. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "mkdir public/vendors && cp node_modules/react/dist/react.min.js public/vendors && cp node_modules/jquery/dist/jquery.min.js public/vendors",
+    "heroku-postbuild": "mkdir public/vendors && cp node_modules/react/dist/react.min.js public/vendors && cp node_modules/jquery/dist/jquery.min.js public/vendors",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoganMcDonald/react_todo.git"
+  },
+  "author": "Hogan McDonald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoganMcDonald/react_todo/issues"
+  },
+  "homepage": "https://github.com/HoganMcDonald/react_todo#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1"
+  }
+}
